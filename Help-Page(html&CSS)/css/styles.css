@@ -1,0 +1,229 @@
+@media (max-width: 650px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media (max-width: 570px) {
+    :root {
+        font-size: 11px;
+    }
+}
+@media (max-width: 450px) {
+    :root {
+        font-size: 9px;
+    }
+}
+@media (max-width: 375px) {
+    :root {
+        font-size: 7px;
+    }
+}
+body {
+    margin: 0;
+}
+* {
+    font-family:'GT America Standard', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+p {
+    font-size: 1.3em;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 0.5em;
+    color: #fff;
+    padding: 1rem 5vw;
+}
+#first-logo, #second-logo {
+    background-color: white;
+    margin: 0 0.1em;
+    width: 1.2em;
+}
+.header > .logo-and-help span:nth-child(2) {
+    border-right: #fff solid;
+    padding: 0.3em 0.7em;
+}
+.sign--in--btn {
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.5rem;
+}
+.sign--in--btn:hover {
+    color: #000000;
+    background-color: white;
+    cursor: pointer;
+}
+.large-btn {
+    color: #fff;
+    background-color: #000000;
+    border-radius: 0.21em;
+    font-size: 1.2em;
+}
+.btn {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #4c5fd5;
+    border-radius: 0.21em;
+    border: #4c5fd5 solid;
+}
+.search-container {
+    background-color: #dadbf1;
+    text-align: center;
+    padding: 8em;
+}
+.search-container h1 {
+    font-size: 5em;
+    font-weight: 400;
+    margin-bottom: 1.2em;
+}
+.inside-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.7em 1em;
+    width: 40%;
+    margin-top: 0.8em;
+    border: #000000 solid;
+    border-radius: 0.6em;
+    background-color: #fff;
+}
+.submit-btn {
+    border: 0;
+}
+.submit-btn:hover {
+    cursor: pointer;
+}
+.search-bar {
+    padding-top: 0.5em;
+    font-size: 1.4em;
+    text-align: left;
+    width: 80%;
+    border-radius: 0.8em;
+}
+.search-btn {
+    background-color: #fff;
+    width: 8%;
+    margin-right: 0.5em;
+}
+.body-container:nth-child(1){
+    grid-area: one;
+}
+.body-container:nth-child(2) {
+    grid-area: two;
+}
+.body-container:nth-child(3){
+    grid-area: three;
+}
+.body-container:nth-child(4) {
+    grid-area: four;
+}
+.body-container:nth-child(5) {
+    grid-area: five;
+}
+.body-container:nth-child(6) {
+    grid-area: six;
+}
+@media (min-width: 1100px) {
+    .body-container {
+        padding: 15em;
+        display: grid;
+        gap: 5em;
+        grid-template-areas: 
+        'one two'
+        'three four'
+        'five six'
+        ;
+    }   
+    .body-container>div {
+        margin: 3em;
+    }
+}
+@media (max-width: 1100px) {
+    .body-container>div {
+        margin: 3em;
+    }
+}
+.img {
+    height: 4em;
+    
+}
+.body-container > div {
+    display: flex;
+    gap: 3em;
+}
+.paragraph {
+    margin: 1em 0;
+}
+.footer-container>div:nth-child(1){
+    grid-area: first;
+}
+.footer-container>div:nth-child(2){
+    grid-area: second;
+}
+.footer-container>div:nth-child(3){
+    grid-area: third;
+}
+.footer-container>div:nth-child(4){
+    grid-area: fourth;
+}
+.footer-container>div:nth-child(5){
+    grid-area: fifth;
+}
+.footer-container>div:nth-child(6){
+    grid-area: sixth;
+}
+@media (min-width: 1250px) {
+    .footer-container {
+        display: grid;
+        gap: 5em;
+        grid-template-areas: 
+        'first second third fourth fourth fourth'
+        'first second third fifth fifth sixth'
+        ;
+    }
+}
+@media (max-width: 1250px) {
+    .footer-container {
+        display: grid;
+        gap: 4em;
+        grid-template-areas: 
+        'first second second'
+        'third fourth fourth'
+        'third fifth sixth'
+        ;
+    }
+}
+@media (max-width:835px) {
+    .footer-container {
+        display: grid;
+        gap: 4em;
+        grid-template-areas: 
+        'first second'
+        'third fourth'
+        'fifth sixth'
+        ;
+    }
+}
+.footer-container {
+    color: #fff;
+    background-color: #000000;
+    padding: 5em;
+}
+.footer-container>div>p{
+    font-weight: 200;
+    font-size: 0.9em;
+    line-height: 1.75em;
+}
+.footer-container>div>h2 {
+    font-weight: 400;
+    line-height: 1.75em;
+}
+.footer-container>div:nth-child(6) {
+    font-size: 1.3em;
+}
